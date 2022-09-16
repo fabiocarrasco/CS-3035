@@ -1,0 +1,20 @@
+Prelude> getArea l w = l * w
+Prelude> getArea 2 5
+10
+Prelude> makeList n = [1..n]
+Prelude> makeList 10
+[1,2,3,4,5,6,7,8,9,10]
+Prelude> checkHyp a b c = c == sqrt(a * a + b * b)
+Prelude> checkHyp 24 32 40
+True
+Prelude> checkHyp 1 2 3
+False
+Prelude> checkHyp a b c = c == sqrt(a ^ 2 + b ^ 2)
+Prelude> checkHyp 24 32 40
+True
+Prelude> checkHyp 1 2 3
+Prelude> checkTriple a b c = checkHyp a b c || checkHyp a c b || checkHyp b a c || checkHyp b c a || checkHyp c a b || checkHyp c b a
+Prelude> checkTriple 3 4 5
+True
+Prelude> checkTriple 1 2 3
+False

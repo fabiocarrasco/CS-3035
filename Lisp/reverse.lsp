@@ -1,0 +1,11 @@
+(defun reverse (s)
+	(COND
+		((string= "" s)"")
+		(t(concatenate 'string (subseq s (-(length s) 1) (length s)) (reverse(subseq s 0 (- (length s) 1)))))
+	)
+)
+(reverse "")
+(reverse "a")
+(reverse "ab")
+(reverse "abc")
+(reverse "abcd")

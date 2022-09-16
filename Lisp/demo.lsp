@@ -1,0 +1,5 @@
+(defun fact (s) 
+	(char s (- (length s) 2)
+	)
+)
+(fact "1bcda")
